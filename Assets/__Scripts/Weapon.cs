@@ -10,7 +10,8 @@ public enum eWeaponType{
     missile,
     lazer,
     shield,
-    slow
+    slow,
+    fast
 }
 
 [System.Serializable]

@@ -85,13 +85,18 @@ public class Hero : MonoBehaviour
             break;
 
         case eWeaponType.slow:
+            speed=15;
+            break;
+
+        case eWeaponType.fast:
+            speed=37;
             break;
 
         default:
             if (pUp.type == weapons[0].type) {
                 Weapon weap = GetEmptyWeaponSlot();
                 if (weap != null) {
-                    // Set it to pUp.type
+                    //set to pUp.type
                     weap.SetType(pUp.type);
                 }
             }else{
